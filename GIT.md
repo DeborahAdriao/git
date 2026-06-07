@@ -37,3 +37,30 @@ No ecossistema Apple, o processo é bem direto:
     * Digite **Terminal** e pressione `Enter`.
 2.  **Pelo Finder:**
     * Abra o Finder, vá para a pasta **Aplicativos** > subpasta **Utilitários** e dê um duplo clique em **Terminal**.
+
+---
+
+## Principais comandos Git
+### Criar um novo repositório local
+
+```
+git init
+```
+
+### Verificar o estado do arquivo/diretório atual
+
+```
+git status
+```
+
+### Adicionar arquivos e/ou suas alterações
+
+```
+git add nome_do_arquivo
+```
+
+#### Adicionar tudo até então
+
+```
+git add .
+```
