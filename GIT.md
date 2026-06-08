@@ -59,8 +59,89 @@ git status
 git add nome_do_arquivo
 ```
 
-#### Adicionar tudo até então
+### Adicionar tudo até então
 
 ```
 git add .
 ```
+
+### Gravar as alterações na história do projeto (Salvar)
+
+```
+git commit -m "Mensagem explicando o que foi feito"
+```
+
+### Enviar as alterações locais para o GitHub
+-> Na primeira vez que enviar (define a branch principal):
+
+```
+git push -u origin main
+```
+
+-> Nas próximas vezes, apenas:
+
+```
+git push
+```
+
+### Atualizar o repositório local com as novidades do GitHub
+
+```
+git pull
+```
+
+## Trabalhando com Branches (Ramificações)
+### Listar as branches existentes no projeto
+
+```
+git branch 
+```
+
+### Criar uma nova branch e muda para ela imediatamente 
+
+```
+git checkout -b nome-da-branch
+```
+
+### Troca de branch 
+
+```
+git checkout nome-da-branch
+```
+
+### Enviar uma branch específica para o GitHub
+
+```
+git push origin nome-da-branch
+```
+
+### Atualizar uma branch específica com as novidades do GitHub
+
+```
+git pull origin nome-da-branch
+```
+
+---
+
+## Comandos Úteis de Terminal e Execução
+
+Esses comandos não são do Git, mas são essenciais para navegar pelas pastas no terminal e executar seus projetos.
+
+### Listar arquivos e pastas do diretório atual (List)
+
+```
+ls 
+```
+
+### Mudar de diretório / Entrar em uma pasta (Change Directory)
+
+```
+cd nome-da-pasta
+```
+
+### Iniciar um servidor web Python ASGI (Uvicorn)
+
+```
+uvicorn nome_do_arquivo:app --reload
+```
+*(Muito utilizado para rodar APIs em Python, como o FastAPI. O parâmetro `--reload` faz o servidor reiniciar automaticamente a cada alteração que você salvar no código).*
